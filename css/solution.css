@@ -79,6 +79,15 @@
         padding: 2em 0;
     }
 
+    #carousel-of-images::-webkit-scrollbar {
+        display: none;
+    }
+
+    #carousel-of-images {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
 /*  End of Section five */
 
     .align-buttons {
