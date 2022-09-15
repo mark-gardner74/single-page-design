@@ -1,0 +1,176 @@
+
+/*  General Elements    */
+
+    .default-width {
+        min-width: 375px;
+        width: 90%;
+        max-width: 450px;
+        margin: 2em auto;
+    }
+
+    .centred-text {
+        text-align: center;
+        padding: 0 2em;
+        margin: auto;
+    }
+
+    .column-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 2em;
+        width: 100%;
+    }
+
+    .row-flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+/*  End of General Elements    */
+
+/*  Header Section  */
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .format-logo {
+        height: 3em;
+        width: 3em;
+    }
+
+/*  End of Header Section   */
+
+/*  Section two - Text intro - Nothing special here at present   */
+
+/*  Section three - Grid Section, in grid-xection.css  */
+
+/*  Section four - Amy Section  */
+
+    .image-amy {
+        max-width: 340px;
+    }
+
+/*  End of Section four */
+
+/*  Section five - Scrolling images */
+
+    #carousel-of-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0;
+    }
+
+/*  End of Section five */
+
+    .margin-buffer {
+        margin-bottom: 2em;
+    }
+
+    .hide-overflow {
+        overflow: hidden;
+    }
+
+    .align-buttons {
+        width: 40% !important;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
+    .black-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 2em;
+        background-color: var( --black );
+        height: 23em;
+        border-radius: 1em;
+        color: var( --light-cream ) !important;
+    }
+
+    @media screen and ( min-width: 768px ) {
+
+        body {
+            max-width: 1024px;
+        }
+
+        .align-buttons {
+            width: 20% !important;
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
+
+        .grid-for-images {
+            height: 35em;
+
+            display: grid;
+            grid-template-columns: 2fr repeat( 2, 1fr );
+            grid-template-rows: repeat( 3, 1fr );
+            justify-content: center;
+            margin-bottom: 2em;
+
+            grid-template-areas:
+            "pattern-gd pattern-ui pattern-app"
+            "pattern-gd pattern-ill pattern-ill"
+            "pattern-pho pattern-mot pattern-mot";
+        }
+
+        .default-width {
+            min-width: 768px;
+            width: 90%;
+            max-width: 1024px;
+        }
+
+        .width-50-50 {
+            width: 50%;
+            text-align: left !important;
+            align-items: flex-start;
+        }
+
+        .tablet-upwards {
+            flex-direction: row !important;
+        }
+
+        .override-centred-text {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .black-box {
+            max-width: 90%;
+        }
+
+    }
+
+    @media screen and ( min-width: 1024px ) {
+
+        body {
+            max-width: 1024px;
+        }
+
+        .grid-for-images {
+            height: 25em;
+            display: grid;
+            grid-template-columns: 2fr repeat( 2, 1fr ) 2fr;
+            grid-template-rows: repeat( 2, 1fr );
+            justify-content: center;
+            margin-bottom: 2em;
+
+            grid-template-areas:
+            "pattern-gd pattern-ui pattern-app pattern-pho"
+            "pattern-gd pattern-ill pattern-ill pattern-mot"
+        }
+
+
+    }

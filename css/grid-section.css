@@ -1,0 +1,136 @@
+
+    .grid-for-images {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr );
+        grid-template-rows: 2fr repeat( 4, 1fr );
+        justify-content: center;
+        width: 100%;
+        gap: 1em;
+        height: 75em;
+
+        grid-template-areas:
+            "pattern-gd pattern-gd"
+            "pattern-ui pattern-app"
+            "pattern-ill pattern-ill"
+            "pattern-pho pattern-pho"
+            "pattern-mot pattern-mot";
+    }
+
+    .standard-radius {
+        border-radius: 1em;
+    }
+
+    .standard-graphic::before {
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: '';
+        top: 2em;
+        right: 2em;
+    }
+
+    .standard-text::after {
+        position: absolute;
+        font-size: 1.5em;
+        color: white;
+        bottom: 1em;
+        left: 1em;
+    }
+
+    .pattern-graphic-design {
+        position: relative;
+        background-color: var( --galactic-blue );
+        grid-area: pattern-gd;
+    }
+
+    .pattern-graphic-design::before {
+        background-image: url( '../assets/pattern-graphic-design.svg' );
+        width: 8em;
+        height: 12em;
+    }
+
+    .pattern-graphic-design::after {
+        content: 'Graphic Design';
+    }
+
+    .ui-ux-design {
+        position: relative;
+        background-color: var( --summer-yellow );
+        grid-area: pattern-ui;
+    }
+
+    .ui-ux-design::before {
+        background-image: url( '../assets/pattern-ui-ux.svg' );
+        width: 4em;
+        height: 4em;
+    }
+
+    .ui-ux-design::after {
+        content: 'UI/UX';
+    }
+
+    .apps-design {
+        position: relative;
+        background-color: var( --light-red );
+        grid-area: pattern-app;
+    }
+
+    .apps-design::before {
+        background-image: url( '../assets/pattern-apps.svg' );
+        width: 4em;
+        height: 4em;
+    }
+
+    .apps-design::after {
+        content: 'Apps';
+    }
+
+    .illustrations-design {
+        position: relative;
+        background-color: var( --light-red );
+
+        grid-area: pattern-ill;
+    }
+
+    .illustrations-design::before {
+        background-image: url( '../assets/pattern-illustrations.svg' );
+        width: 8em;
+        height: 4em;
+    }
+
+    .illustrations-design::after {
+        content: 'Illustrations';
+    }
+
+    .photography-design {
+        position: relative;
+        background-color: var( --cyan );
+
+        grid-area: pattern-pho;
+    }
+
+    .photography-design::before {
+        background-image: url( '../assets/pattern-photography.svg' );
+        width: 8em;
+        height: 4em;
+    }
+
+    .photography-design::after {
+        content: 'Photography';
+    }
+
+    .motion-graphics-design {
+        position: relative;
+        background-color: var( --dark-purple );
+        grid-area: pattern-mot;
+    }
+
+    .motion-graphics-design::before {
+        background-image: url( '../assets/pattern-motion-graphics.svg' );
+        width: 8em;
+        height: 4em;
+    }
+
+    .motion-graphics-design::after {
+        content: 'Motion Graphics';
+    }

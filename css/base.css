@@ -1,0 +1,139 @@
+
+    :root {
+
+        /*  Font Sizes  */
+
+        --fs-default: 14px;
+        --heading-l: 3.5rem;
+        --heading-m: 2.5rem;
+        --heading-s: 2rem;
+
+        --body-m: 1.125rem;
+        --body-s: 1rem;
+
+        /*  Widths  */
+
+        --min-width-all: 320px;
+        --max-width-all: 1024px;
+
+        --break-width-small: 360px;
+        --break-width-tablet: 768px;
+        --break-width-desktop: 1024px;
+        --break-width-largest: 1440px;
+
+        --break-size: var( --break-width-small );
+
+        /*  Colours */
+
+        --black: rgb( 3, 3, 3 );
+        --medium-brown: rgb( 122, 116, 110 );
+        --light-cream: rgb( 255, 247, 240 );
+
+        --galactic-blue: rgb( 117, 92, 222 );
+        --summer-yellow: rgb( 246, 165, 96 );
+        --pink: rgb( 243, 158, 158 );
+        --light-red: rgb( 243, 158, 158 );
+        --cyan: rgb( 97, 196, 183 );
+        --dark-purple: rgb( 85, 32, 73 );
+
+        --white-to-grey: linear-gradient( rgb( 255, 255, 255 ), rgb( 240, 241, 255 ) );
+
+    }
+
+    * {
+        font-size: var( --fs-default );
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        scroll-margin: 2rem;
+    }
+
+    html, body {
+        font-family: 'Roboto', sans-serif;  /*  This works with the Jakarta Font    */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        background-color: var( --light-cream );
+    }
+
+    body {
+        max-width: 1440px;
+        min-height: 2000px;
+    }
+
+    img, picture, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    .heading-l {
+        font-size: var( --heading-l );
+        line-height: 70px;
+    }
+
+    .heading-m {
+        font-size: var( --heading-m );
+        line-height: 51px;
+    }
+
+    .heading-s {
+        font-size: var( --heading-s );
+        line-height: 40px;
+    }
+
+    .body-m {
+        font-size: var( --body-m );
+        line-height: 28px;
+    }
+
+    .medium-brown {
+        color: var( --medium-brown );
+    }
+
+    .bold-text {
+        font-weight: bold;
+    }
+
+    .base-button {
+        cursor: pointer;
+        color: white;
+        padding: 1em 2em;
+        border-radius: 90px;
+    }
+
+/*  TODO:   Look at the best way of formatting this with the SVG in the centre  */
+
+    .base-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var( --black );
+        width: 4em;
+        height: 4em;
+        border-radius: 90px;
+        cursor: pointer;
+    }
+
+    .base-arrow:hover {
+        background-color: var( --galactic-blue );
+    }
+
+    .button-one {
+        background-color: var( --black );
+        color: var( --light-cream );
+    }
+
+    .button-one:hover {
+        background-color: var( --galactic-blue );
+    }
+
+    .button-two {
+        background-color: var( --light-red );
+        color: var( --light-cream );
+    }
+
+    .button-two:hover {
+        background-color: var( --summer-yellow );
+    }

@@ -1,45 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single-page design portfolio</title>
-</head>
-<body>
+            <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+            <title>Frontend Mentor | Single-page design portfolio</title>
 
-  Free Consultation
+            <link href="css/base.css" rel="stylesheet" />
+            <link href="css/grid-section.css" rel="stylesheet" />
+            <link href="css/solution.css" rel="stylesheet" />
 
-  Design solutions made easy
+        </head>
 
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+        <body>
 
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
+            <header class="row-flex default-width">
+                <img src="assets/logo.svg" class="format-logo" />
+                <span class="base-button button-one">Free Consultation</span>
+            </header>
 
-  I’m Amy, and I’d love to work on your next project
+            <main>
 
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
+                <section class="default-width column-flex centred-text">
+                    <h1 class="heading-m bold-text">
+                        Design solutions made easy
+                    </h1>
 
-  Free Consultation
+                    <p class="body-m medium-brown" >
+                        With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+                    </p>
+                </section>
 
-  My Work
+<!--    TODO:   Redo this as a grid -->
 
-  Book a call with me
+                <section class="grid-for-images default-width">
+                    <div class="pattern-graphic-design standard-radius standard-graphic standard-text"></div>
+                    <div class="ui-ux-design standard-radius smaller-boxes standard-graphic standard-text"></div>
+                    <div class="apps-design standard-radius smaller-boxes standard-graphic standard-text"></div>
+                    <div class="illustrations-design standard-radius standard-graphic standard-text"></div>
+                    <div class="photography-design set-height standard-radius standard-graphic standard-text"></div>
+                    <div class="motion-graphics-design set-height standard-radius standard-graphic standard-text"></div>
+                </section>
 
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
+                <section class="column-flex margin-buffer default-width tablet-upwards">
+                    <div class="centred-text">
+                        <img class="image-amy" src="assets/image-amy.webp" />
+                    </div>
+                    <div class="column-flex centred-text override-centred-text">
+                        <h1 class="heading-s">
+                            I’m Amy, and I’d love to work on your next project
+                        </h1>
+                        <p class="body-m medium-brown">
+                            I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
+                            to complete mobile apps. I’m also handy with a camera!
+                        </p>
+                        <div class="base-button button-two">
+                            Free Consultation
+                        </div>
+                    </div>
+                </section>
 
-  Free Consultation
+                <section class="column-flex centred-text hide-overflow">
 
-  Free Consultation
+                    <h1 class="heading-s">My Work</h1>
 
-</body>
-</html>
+                    <div id="carousel-of-images">
+                        <img src="assets/image-slide-1.jpg" />
+                        <img src="assets/image-slide-2.jpg" />
+                        <img src="assets/image-slide-3.jpg" />
+                        <img src="assets/image-slide-4.jpg" />
+                        <img src="assets/image-slide-5.jpg" />
+                    </div>
+
+                    <div class="row-flex align-buttons">
+                        <span id="left-arrow" class="base-arrow"><img src="assets/icon-arrow-left.svg"></span>
+                        <span id="right-arrow" class="base-arrow"><img src="assets/icon-arrow-right.svg"></span>
+                    </div>
+
+                </section>
+
+            </main>
+
+            <footer class="default-width column-flex">
+
+                <section class="black-box tablet-upwards">
+
+                    <div class="column-flex width-50-50">
+                        <h1 class="heading-s">
+                            Book a call with me
+                        </h1>
+
+                        <p class="body-m">
+                            I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+                            free consultation. Then we can move forward from there.
+                        </p>
+                    </div>
+
+                    <div class="base-button button-two">
+                        Free Consultation
+                    </div>
+                </section>
+
+                <div class="row-flex ">
+                    <img src="assets/logo.svg" class="format-logo" />
+                    <span class="base-button button-one">Free Consultation</span>
+                </div>
+            </footer>
+
+            <script src="js/scroll-left-right.js"></script>
+
+        </body>
+    </html>
