@@ -103,8 +103,6 @@
         border-radius: 90px;
     }
 
-/*  TODO:   Look at the best way of formatting this with the SVG in the centre  */
-
     .base-arrow {
         display: flex;
         align-items: center;

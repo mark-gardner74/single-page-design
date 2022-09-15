@@ -29,6 +29,10 @@
         width: 100%;
     }
 
+    .margin-buffer {
+        margin-bottom: 2em;
+    }
+
 /*  End of General Elements    */
 
 /*  Header Section  */
@@ -63,28 +67,26 @@
 
 /*  Section five - Scrolling images */
 
+    .hide-overflow {
+        overflow: hidden;
+    }
+
     #carousel-of-images {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        white-space: nowrap;
+        overflow-x: auto;
         padding: 2em 0;
     }
 
 /*  End of Section five */
-
-    .margin-buffer {
-        margin-bottom: 2em;
-    }
-
-    .hide-overflow {
-        overflow: hidden;
-    }
 
     .align-buttons {
         width: 40% !important;
         margin-top: 1em;
         margin-bottom: 3em;
     }
+
+/*  Section six - Box section */
 
     .black-box {
         display: flex;
@@ -98,6 +100,8 @@
         border-radius: 1em;
         color: var( --light-cream ) !important;
     }
+
+/*  End of Section six  */
 
     @media screen and ( min-width: 768px ) {
 
@@ -171,6 +175,4 @@
             "pattern-gd pattern-ui pattern-app pattern-pho"
             "pattern-gd pattern-ill pattern-ill pattern-mot"
         }
-
-
     }
